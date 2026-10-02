@@ -302,7 +302,7 @@
             font-size: 0.65rem;
         }
 
-        /* 4. SIDEBAR COLUMN */
+        /* 4. SIDEBAR COLUMN (ทำเป็น Sticky ลอยเลื่อนตามหน้าจอ) */
         .sidebar-column {
             display: flex;
             flex-direction: column;
@@ -317,25 +317,26 @@
         .sub-link-sidebar {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 3px;
         }
 
+        /* ปรับตัวหนังสือเมนูกรอบสีเขียวให้เล็กลง กระทัดรัด */
         .btn-sub-web {
             background: linear-gradient(135deg, #bf953f 0%, #d4af37 50%, #aa771c 100%);
             color: #0a0b0d;
-            padding: 4px 6px;
+            padding: 3px 5px;
             border-radius: 4px;
             border: 1px solid #ffe57f;
             text-decoration: none;
-            font-size: 0.6rem;
+            font-size: 0.52rem;
             font-weight: 800;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            gap: 4px;
-            min-height: 26px;
-            line-height: 1.15;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            gap: 3px;
+            min-height: 22px;
+            line-height: 1.1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
             word-break: break-word;
             -webkit-font-smoothing: antialiased;
         }
@@ -563,7 +564,7 @@
             .card { padding: 10px; }
             .card h3 { font-size: 0.88rem; }
             .card ul li { font-size: 0.75rem; }
-            .btn-sub-web { font-size: 0.68rem; min-height: 32px; padding: 3px 6px; }
+            .btn-sub-web { font-size: 0.58rem; min-height: 26px; padding: 3px 5px; }
             .section-title { font-size: 0.95rem; }
             header h1 { font-size: 1.3rem; }
             .hero-card h2 { font-size: 1.15rem; }
@@ -590,10 +591,11 @@
 
         <!-- Main Layout: ซ้าย 74% / ขวา 24% -->
         <div class="main-content-layout">
-            <!-- ฝั่งซ้าย: งานบริการหลัก -->
+            <!-- ฝั่งซ้าย: รายการงานบริการหลัก (จัดแบบ 6 ช่องเรียบร้อย) -->
             <div class="services-column">
                 <h2 class="section-title">รายการงานซ่อมและติดตั้ง</h2>
                 <div class="grid">
+                    <!-- ช่อง 1 -->
                     <div class="card">
                         <h3>🛠️ รับงานบริการซ่อมและติดตั้งปั๊มน้ำ อาคาร โรงงาน</h3>
                         <img src="service-pump.jpg" alt="ช่างซ่อมติดตั้งปั๊มน้ำ" class="img-responsive">
@@ -604,6 +606,8 @@
                             <li>ระบบ Transfer Pump (ปั๊มส่งน้ำขึ้นอาคาร)</li>
                         </ul>
                     </div>
+
+                    <!-- ช่อง 2 -->
                     <div class="card">
                         <h3>🌊 ระบบสูบน้ำ & ปั๊มจุ่ม ไดโว่ ปั๊มพญานาคไฟฟ้า</h3>
                         <img src="service-submersible.jpg" alt="ปั๊มจุ่ม ไดโว่" class="img-responsive">
@@ -613,6 +617,8 @@
                             <li>ซ่อม ท่อสูบน้ำพญานาค หมู่บ้าน โรงงาน</li>
                         </ul>
                     </div>
+
+                    <!-- ช่อง 3 -->
                     <div class="card">
                         <h3>🔧 งานระบบท่อประปา pvc, ppr</h3>
                         <img src="service-pipe.jpg" alt="งานระบบท่อประปา" class="img-responsive">
@@ -623,6 +629,8 @@
                             <li>เดินระบบท่อประปา อาคาร โรงงาน และบ้านพักอาศัย</li>
                         </ul>
                     </div>
+
+                    <!-- ช่อง 4 -->
                     <div class="card">
                         <h3>🏠 บริการซ่อมติดตั้งปั๊มน้ำบ้านพักอาศัย</h3>
                         <img src="service-home.jpg" alt="ซ่อมปั๊มน้ำบ้าน" class="img-responsive">
@@ -632,14 +640,37 @@
                             <li>เดินระบบท่อน้ำดีใหม่ และตรวจสอบระบบปั๊มน้ำ</li>
                         </ul>
                     </div>
+
+                    <!-- ช่อง 2 สีแดง: ย้ายงานซ่อมตู้คอนโทรลปั๊มน้ำ มาอยู่ตรงนี้ -->
+                    <div class="card">
+                        <h3>⚙️️ งานซ่อมตู้คอนโทรลปั๊มน้ำ</h3>
+                        <img src="service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive">
+                        <ul>
+                            <li>ตรวจเช็คระบบไฟ control ปั๊มน้ำ</li>
+                            <li>เปลี่ยนอะไหล่เฉพาะจุด</li>
+                            <li>บริการซ่อมระบบ control ปั๊มน้ำ</li>
+                        </ul>
+                    </div>
+
+                    <!-- ช่อง 3 สีแดง: เพิ่มเมนูงานติดตั้งวางระบบใหม่ -->
+                    <div class="card">
+                        <h3>🏗️ งานติดตั้งวางระบบใหม่</h3>
+                        <img src="service-new-install.jpg" alt="งานติดตั้งวางระบบปั๊มน้ำใหม่" class="img-responsive">
+                        <ul>
+                            <li>วางระบบปั๊มน้ำ อาคาร คอนโด โรงงาน และบ้านพักอาศัย</li>
+                            <li>คำนวณและวางระบบท่อประปาใหม่ทุกชนิด</li>
+                            <li>ออกแบบและประกอบตู้คอนโทรลปั๊มน้ำตามหน้างาน</li>
+                            <li>ตรวจสอบและทดสอบระบบน้ำก่อนส่งมอบงาน</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- ฝั่งขวา: แถบบริการย่อย & เครือข่าย -->
+            <!-- ฝั่งขวา: แถบบริการย่อย & เครือข่าย (กรอบสีเขียว - ตัวหนังสือเล็กลง & Sticky ลอยตามหน้าจอ) -->
             <div class="sidebar-column">
                 <h2 class="section-title">เครือข่ายบริการ</h2>
                 <div class="sub-link-sidebar">
-                    <a href="http://business.google.com/n/11072600062830195423/profile" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-brands fa-google"></i>เครือข่ายติดต่อช่างปั๊มน้ำ</a>
+                    <a href="http://business.google.com/n/11072600062830195423/profile" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-brands fa-google"></i> เครือข่ายติดต่อช่างปั๊มน้ำ</a>
                     <a href="https://www.facebook.com/ksservice898" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-brands fa-facebook"></i> ติดต่อช่างปั๊มน้ำในพื้นที่</a>
                     <a href="https://near-me.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-solid fa-location-dot"></i> ช่างปั๊มน้ำ Waterpump repair near me</a>
                     <a href="https://home-water-pump.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-solid fa-faucet-drip"></i> ปั๊มน้ำบ้านพักอาศัย</a>
@@ -650,21 +681,10 @@
                     <a href="https://pipe.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-solid fa-toilet-portable"></i> งานเดินระบบท่อ</a>
                     <a href="https://maintenance.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web"><i class="fa-solid fa-wrench"></i> ซ่อมบำรุง PM ปั๊มน้ำ</a>
                 </div>
-
-                <!-- การ์ดงานซ่อมตู้คอนโทรล -->
-                <div class="card" style="margin-top: 4px;">
-                    <h3>⚙️ งานซ่อมตู้คอนโทรลปั๊มน้ำ</h3>
-                    <img src="service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive">
-                    <ul>
-                        <li>ตรวจเช็คระบบไฟcontrol ปั๊มน้ำ</li>
-                        <li>เปลี่ยนอะไหล่อะเฉพาะจุด</li>
-                        <li>บริการซ่อมระบบ control ปั๊มน้ำ</li>
-                    </ul>
-                </div>
             </div>
         </div>
 
-        <!-- FAQ Box แบบพับเก็บได้ (ตรงตามไฟล์ล่าสุด 100%) -->
+        <!-- FAQ Box แบบพับเก็บได้ -->
         <div class="faq-box">
             <h2 class="section-title">❓ คำถามที่พบบ่อย (FAQ)</h2>
             
