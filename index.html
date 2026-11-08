@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/">
     <title>ช่างปั๊มน้ำ - KS Service | ซ่อม ติดตั้ง ปั๊มน้ำ Booster Pump ปั๊มจุ่ม งานท่อ PVC PPR</title>
     <meta name="description" content="ช่างซ่อมปั๊มน้ำใกล้ฉัน บริการซ่อมติดตั้งปั๊มน้ำ Booster Pump, Transfer Pump ปั๊มจุ่ม ไดโว่ ปั๊มสูบน้ำเสีย ท่อสูบน้ำพญานาค ตู้คอนโทรลปั๊มน้ำ งานระบบท่อประปา pvc,ppr โดย ช่างเกียรติพงษ์ โทร 082-712-7490">
     <meta name="keywords" content="ช่างซ่อมปั๊มน้ำใกล้ฉัน, ช่างปั๊มน้ำ, ซ่อมปั๊มน้ำติดตั้งปั๊มน้ำ, บริการซ่อมติดตั้งปั๊มน้ำ, หมวดประเภทปั๊มน้ำ Booster Pump, ปั๊มน้ำอาคาร, คอนโด, โรงงาน, บ้านพักอาศัย, ระบบสูบน้ำ, ปั๊มสูบน้ำปั๊มจุ่ม, ไดโว่, ปั๊มสูบน้ำเสียซ่อม, ท่อสูบน้ำพญานาค, งานระบบท่อประปา pvc, ppr">
@@ -13,7 +14,7 @@
     <meta property="og:url" content="https://repair.ksservice89.com">
     <meta property="og:title" content="เคเอส เซอร์วิส 89 | ช่างซ่อมปั๊มน้ำใกล้ฉัน กรุงเทพฯฝั่งตะวันออก สมุทรปราการ">
     <meta property="og:description" content="บริการซ่อมติดตั้งปั๊มน้ำ Booster Pump, Transfer Pump, ไดโว่, ระบบท่อ PVC/PPR โทร 082-712-7490">
-    <meta property="og:image" content="https://repair.ksservice89.com/hero-bg.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/hero-banner.jpg">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,7 +25,7 @@
       "@context": "https://schema.org",
       "@type": "Plumber",
       "name": "KS Service 89 - ช่างซ่อมปั๊มน้ำ ช่างเกียรติพงษ์",
-      "image": "https://www.ksservice89.com/favicon.ico",
+      "image": "https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/logo.png",
       "@id": "https://repair.ksservice89.com",
       "url": "https://repair.ksservice89.com",
       "telephone": "082-712-7490",
@@ -74,7 +75,7 @@
     }
     </script>
 
-    <!-- 2. FAQPage Schema (เพิ่มข้อดูดน้ำจากท่อประปาโดยตรงแล้ว) -->
+    <!-- 2. FAQPage Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -186,13 +187,15 @@
             color: #111111;
         }
         .header-logo {
-            max-width: 55px;
-            height: auto;
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
             border-radius: 50%;
             background: #000;
             border: 2px solid #111111;
             margin-bottom: 4px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            display: inline-block;
         }
         
         .container {
@@ -230,11 +233,12 @@
         .hero-img {
             width: 100%;
             height: auto;
-            max-height: 110px;
+            aspect-ratio: 21 / 9;
             object-fit: cover;
             border-radius: 6px;
-            margin: 6px 0 2px 0;
+            margin: 8px 0 2px 0;
             border: 1px solid rgba(212, 175, 55, 0.4);
+            display: block;
         }
 
         /* 3. MAIN LAYOUT (ซ้าย 74% / ขวา 24%) */
@@ -266,6 +270,7 @@
             box-shadow: 0 3px 8px rgba(0,0,0,0.5);
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
         .card h3 {
             font-size: 0.76rem;
@@ -275,15 +280,15 @@
             margin-bottom: 4px;
         }
 
+        /* ปรับรูปภาพใน Card ให้เข้ากรอบ 16:9 พอดีทุกใบ */
         .img-responsive {
             width: 100%;
             aspect-ratio: 16 / 9;
             height: auto;
-            max-height: 90px;
             object-fit: cover;
             border-radius: 5px;
-            margin: 4px 0;
-            background-color: #000000;
+            margin: 4px 0 6px 0;
+            background-color: #0b0d11;
             border: 1px solid rgba(255, 255, 255, 0.15);
             display: block;
         }
@@ -376,7 +381,9 @@
         .full-width-img {
             width: 100%;
             height: auto;
-            object-fit: contain;
+            aspect-ratio: 16 / 9;
+            max-height: 480px;
+            object-fit: cover;
             border-radius: 8px;
             border: 1px solid rgba(212, 175, 55, 0.4);
             margin-top: 8px;
@@ -566,8 +573,7 @@
         @media (min-width: 768px) {
             .container { padding: 0 12px; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .img-responsive { max-height: 110px; }
-            .hero-img { max-height: 140px; }
+            .hero-img { aspect-ratio: 24 / 9; }
             .card { padding: 10px; }
             .card h3 { font-size: 0.88rem; }
             .card ul li { font-size: 0.75rem; }
@@ -583,7 +589,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="โลโก้ เคเอส เซอร์วิส 89 ช่างซ่อมปั๊มน้ำ" class="header-logo">
+        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/logo.png" alt="โลโก้ เคเอส เซอร์วิส 89 ช่างซ่อมปั๊มน้ำ" class="header-logo">
         <h1>เคเอส เซอร์วิส ซ่อมติดตั้งระบบปั๊มน้ำ</h1>
         <p>ซ่อม ติดตั้ง ระบบปั๊มน้ำ & งานท่อประปา | ช่างเกียรติพงษ์ 082-712-7490</p>
     </header>
@@ -593,7 +599,7 @@
         <div class="hero-card">
             <h2>ช่างซ่อมและติดตั้งปั๊มน้ำ ปั๊มอาคารคอนโด บ้านพักอาศัย</h2>
             <p>ซ่อมและติดตั้งปั๊มน้ำ Booster Pump, Transfer Pump, ปั๊มจุ่ม, ไดโว่, ปั๊มสูบน้ำเสีย ตู้คอนโทรลปั๊มน้ำ สำหรับอาคาร คอนโด โรงงาน หมู่บ้าน และบ้านพักอาศัย</p>
-            <img src="hero-banner.jpg" alt="ช่างซ่อมปั๊มน้ำ อาคาร คอนโด" class="hero-img">
+            <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/hero-banner.jpg" alt="ช่างซ่อมปั๊มน้ำ อาคาร คอนโด" class="hero-img">
         </div>
 
         <!-- Main Layout: ซ้าย 74% / ขวา 24% -->
@@ -605,7 +611,7 @@
                     <!-- ช่อง 1 -->
                     <div class="card">
                         <h3>🛠️ รับงานบริการซ่อมและติดตั้งปั๊มน้ำ อาคาร โรงงาน</h3>
-                        <img src="service-pump.jpg" alt="ช่างซ่อมติดตั้งปั๊มน้ำ" class="img-responsive">
+                        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/service-pump.jpg" alt="ช่างซ่อมติดตั้งปั๊มน้ำ" class="img-responsive">
                         <ul>
                             <li>ปั๊มน้ำอาคาร, คอนโด, โรงงาน, บ้านพักอาศัย</li>
                             <li>ซ่อมและติดตั้งปั๊มน้ำ(ระบบคอนโทรลปั๊มน้ำ)</li>
@@ -617,7 +623,7 @@
                     <!-- ช่อง 2 -->
                     <div class="card">
                         <h3>🌊 ระบบสูบน้ำ & ปั๊มจุ่ม ไดโว่ ปั๊มพญานาคไฟฟ้า</h3>
-                        <img src="service-submersible.jpg" alt="ปั๊มจุ่ม ไดโว่" class="img-responsive">
+                        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/service-submersible.jpg" alt="ปั๊มจุ่ม ไดโว่" class="img-responsive">
                         <ul>
                             <li>ปั๊มสูบน้ำ, ปั๊มจุ่ม, ไดโว่</li>
                             <li>ปั๊มสูบน้ำเสียซ่อม (ระบบคอนโทรลปั๊มสูบน้ำ)</li>
@@ -628,7 +634,7 @@
                     <!-- ช่อง 3 -->
                     <div class="card">
                         <h3>🔧 งานระบบท่อประปา pvc, ppr</h3>
-                        <img src="service-pipe.jpg" alt="งานระบบท่อประปา" class="img-responsive">
+                        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/service-pipe.jpg" alt="งานระบบท่อประปา" class="img-responsive">
                         <ul>
                             <li>เดินระบบท่อประปา PVC</li>
                             <li>ติดตั้งและเชื่อมท่อ PPR (ท่อเชื่อมความร้อน)</li>
@@ -640,7 +646,7 @@
                     <!-- ช่อง 4 -->
                     <div class="card">
                         <h3>🏠 บริการซ่อมติดตั้งปั๊มน้ำบ้านพักอาศัย</h3>
-                        <img src="service-home.jpg" alt="ซ่อมปั๊มน้ำบ้าน" class="img-responsive">
+                        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/service-home.jpg" alt="ซ่อมปั๊มน้ำบ้าน" class="img-responsive">
                         <ul>
                             <li>ช่างซ่อมปั๊มน้ำใกล้ฉัน ซ่อมปั๊มน้ำติดตั้งปั๊มน้ำ</li>
                             <li>แก้ไขประปารั่วใต้พื้น</li>
@@ -651,7 +657,7 @@
                     <!-- ช่อง 5 -->
                     <div class="card">
                         <h3>⚙ งานซ่อมตู้คอนโทรลปั๊มน้ำ</h3>
-                        <img src="service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive">
+                        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/service-control-panel.jpg" alt="ซ่อมตู้คอนโทรลปั๊มน้ำ" class="img-responsive">
                         <ul>
                             <li>ตรวจเช็คระบบไฟ control ปั๊มน้ำ</li>
                             <li>เปลี่ยนอะไหล่เฉพาะจุด</li>
@@ -662,7 +668,7 @@
                     <!-- ช่อง 6 -->
                     <div class="card">
                         <h3>🏗️ งานติดตั้งวางระบบใหม่</h3>
-                        <img src="service-new-install.jpg" alt="งานติดตั้งวางระบบปั๊มน้ำใหม่" class="img-responsive">
+                        <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/service-new-install.jpg" alt="งานติดตั้งวางระบบปั๊มน้ำใหม่" class="img-responsive">
                         <ul>
                             <li>วางระบบปั๊มน้ำ อาคาร คอนโด โรงงาน และบ้านพักอาศัย</li>
                             <li>คำนวณและวางระบบท่อประปาใหม่ทุกชนิด</li>
@@ -743,13 +749,13 @@
         <!-- ส่วนแสดงภาพผลงาน -->
         <div class="work-section">
             <h2 class="section-title">📸 งานที่ทำเบื้องต้น / ภาพผลงาน</h2>
-            <img src="work-portfolio.jpg" alt="ผลงานซ่อมและติดตั้งระบบปั๊มน้ำ" class="full-width-img">
+            <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/work-portfolio.jpg" alt="ผลงานซ่อมและติดตั้งระบบปั๊มน้ำ" class="full-width-img">
         </div>
 
         <!-- Location Box -->
         <div class="location-box">
             <h2 class="section-title">📍 พื้นที่ให้บริการ (Locations / Service Areas)</h2>
-            <p>ให้บริการเขตกรุงเทพฯฝั่งตะวันออก จังหวัดสมุทรปราการ & พื้นที่ใกล้เคียง โทรติดต่อสอบถามได้ครับ <a href="tel:0827127490">โทร 082-712-7490</a></p>
+            <p>ให้บริการเขตกรุงเทพฯฝั่งตะวันออก จังหวัดสมุทรปราการ & พื้นที่ใกล้เคียง โทรติดต่อสอบถามได้ครับ <a href="tel:0827127490" target="_top">โทร 082-712-7490</a></p>
             <div class="tag-container">
                 <span class="tag">บางนา</span><span class="tag">ประเวศ</span><span class="tag">อุดมสุข</span><span class="tag">ลาซาล</span><span class="tag">แบริ่ง</span><span class="tag">อ่อนนุช</span><span class="tag">สวนหลวง</span><span class="tag">พัฒนาการ</span><span class="tag">กรุงเทพฯกรีฑา</span><span class="tag">คลองตัน</span><span class="tag">สุขุมวิท</span><span class="tag">ศรีนครินทร์</span><span class="tag">ลาดกระบัง</span><span class="tag">บางจาก</span><span class="tag">วัฒนา</span><span class="tag">เอกมัย</span><span class="tag">พระโขนง</span><span class="tag">กิ่งแก้ว</span><span class="tag">สำโรง</span><span class="tag">ราชาเทวะ</span><span class="tag">ราม 2</span><span class="tag">บางแก้ว</span><span class="tag">หนามแดง</span><span class="tag">บางพลี</span><span class="tag">กรุงเทพฯฝั่งตะวันออก</span><span class="tag">จังหวัดสมุทรปราการ</span>
             </div>
@@ -761,7 +767,7 @@
                 ช่างซ่อมปั๊มน้ำ พื้นที่ให้บริการ • ช่างปั๊มน้ำบางนา • ช่างปั๊มน้ำประเวศ • ช่างปั๊มน้ำอุดมสุข • ช่างปั๊มน้ำลาซาล • ช่างปั๊มน้ำแบริ่ง • ช่างปั๊มน้ำอ่อนนุช • ช่างปั๊มน้ำสวนหลวง • ช่างปั๊มน้ำพัฒนาการ • ช่างปั๊มน้ำกรุงเทพฯกรีฑา • ช่างปั๊มน้ำคลองตัน • ช่างปั๊มน้ำสุขุมวิท • ช่างปั๊มน้ำศรีนครินทร์
             </div>
             <a href="https://www.ksservice89.com" target="_blank" rel="noopener" class="btn-web">
-                <img src="logo.png" alt="Logo" class="btn-web-logo">
+                <img src="https://raw.githubusercontent.com/ks89service/-ksservice-assets/main/logo.png" alt="Logo" class="btn-web-logo">
                 <span>เว็บไซต์หลัก www.ksservice89.com</span>
             </a>
             <div class="seo-faint-text">
@@ -771,7 +777,7 @@
 
         <!-- ปุ่มโทร และ ปุ่มไลน์ ด้านล่าง -->
         <div class="btn-group-bottom">
-            <a href="tel:0827127490" class="btn-bottom btn-call-bottom">📞 โทร: 082-712-7490</a>
+            <a href="tel:0827127490" target="_top" class="btn-bottom btn-call-bottom">📞 โทร: 082-712-7490</a>
             <a href="https://line.me/ti/p/EUJqXVHGGA" target="_blank" rel="noopener" class="btn-bottom btn-line-bottom">💬 ทักไลน์สอบถาม</a>
         </div>
     </div>
